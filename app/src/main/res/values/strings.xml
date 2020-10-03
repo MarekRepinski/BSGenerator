@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">BSGenerator</string>
+    <string name="app_name">BS Generator</string>
+    <string name="button_label">New BS!</string>
 </resources>
