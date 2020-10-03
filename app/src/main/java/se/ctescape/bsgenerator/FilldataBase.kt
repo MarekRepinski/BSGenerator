@@ -13,6 +13,7 @@ import se.ctescape.bsgenerator.data.BSphrasesViewModel
 
 class FilldataBase(val context: Context) {
     private val repository : BSphrasesRepository
+    var finished = false
 
     init {
         val bSphrasesDAO = BSphrasesDatabase.getDatabase(context).BSphrasesDAO()
@@ -122,7 +123,7 @@ class FilldataBase(val context: Context) {
             }
             tempInt = repository.getCount()
             println("AIK!! getCount() = ${tempInt} - After")
+            finished = true
         }
-
     }
 }
